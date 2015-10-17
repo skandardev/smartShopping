@@ -8,7 +8,11 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
-
+/***
+ * 
+ * @author skan
+ *
+ */
 @Entity
 @Table(name = "t_user")
 public class User implements Serializable{

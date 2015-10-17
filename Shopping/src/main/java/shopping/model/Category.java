@@ -10,7 +10,11 @@ import javax.persistence.PreRemove;
 import javax.persistence.Table;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
-
+/***
+ * 
+ * @author skan
+ *
+ */
 @Entity
 @Table(name="t_category")
 @XmlRootElement

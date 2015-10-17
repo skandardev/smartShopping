@@ -3,7 +3,11 @@ package shopping.model;
 import java.io.Serializable;
 
 import javax.persistence.Entity;
-
+/***
+ * 
+ * @author skan
+ *
+ */
 @Entity
 public class Admin extends User implements Serializable{
 	
