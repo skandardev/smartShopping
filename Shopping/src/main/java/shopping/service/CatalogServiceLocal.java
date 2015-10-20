@@ -13,14 +13,14 @@ import shopping.model.Product;
 
 
 @Local
-@Path("/webservice") 
+@Path("/webservice")
 public interface CatalogServiceLocal {
 	void createProduct(Product product);
 	void saveOrUpdateProduct(Product product);
 	Product findProductById(int id);
 	void removeProduct(Product product);
 	@GET 
-	@Path("/produits")
+	@Path("/products")
 	@Produces(MediaType.APPLICATION_XML)
 	List<Product> findAllProducts();
 	
