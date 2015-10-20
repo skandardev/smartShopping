@@ -16,7 +16,7 @@ public class Admin extends User implements Serializable{
 	private int adminLevel;
 	
 	/*
-	 * Admin Constructor 
+	 * Admin Construct
 	 */
 	public Admin() {
 	}
