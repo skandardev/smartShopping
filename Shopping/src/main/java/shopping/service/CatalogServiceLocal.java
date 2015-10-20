@@ -13,7 +13,7 @@ import shopping.model.Product;
 
 
 @Local
-@Path("/webservice")
+@Path("/webservice") 
 public interface CatalogServiceLocal {
 	void createProduct(Product product);
 	void saveOrUpdateProduct(Product product);
