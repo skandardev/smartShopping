@@ -7,6 +7,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 
+import shopping.model.SimpleUser;
 import shopping.model.User;
 
 
@@ -32,6 +33,7 @@ public class AuthenticationService implements AuthenticationServiceRemote , Auth
 		try{
 			found = (User) query.getSingleResult();
 		}catch(Exception ex){
+			return found;
 		}
 		return found;
 	}
@@ -48,6 +50,16 @@ public class AuthenticationService implements AuthenticationServiceRemote , Auth
 		query.setParameter("login", login);
 		exists = (Boolean)query.getSingleResult();
 		return exists;
+	}
+
+	public boolean register(String login, String password, String email) {
+		if(loginExists(login)){
+			return false;
+		}else{
+			SimpleUser user = new SimpleUser(login, password, email);
+			createUser(user);
+			return true;
+		}
 	}
 
 }
