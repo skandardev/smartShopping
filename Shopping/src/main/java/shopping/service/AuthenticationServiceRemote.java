@@ -13,4 +13,5 @@ public interface AuthenticationServiceRemote {
 	void createUser(User user);
 	List<User> findAllUsers();
 	User authenticate(String login, String password);
+	boolean register(String login, String password, String email);
 }

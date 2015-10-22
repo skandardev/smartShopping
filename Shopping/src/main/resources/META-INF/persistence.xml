@@ -5,6 +5,7 @@
 		<class>shopping.model.Admin</class>
 		<class>shopping.model.Category</class>
 		<class>shopping.model.Product</class>
+		<class>shopping.model.SimpleUser</class>
 		<class>shopping.model.User</class>
 		<properties>
 			<property name="hibernate.hbm2ddl.auto" value="update" />
