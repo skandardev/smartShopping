@@ -5,7 +5,7 @@ import java.io.Serializable;
 import javax.persistence.Entity;
 /***
  * 
- * @author skan
+ * @author skandar
  *
  */
 @Entity
