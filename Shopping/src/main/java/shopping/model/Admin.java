@@ -21,6 +21,9 @@ public class Admin extends User implements Serializable{
 	public Admin() {
 	}
 
+	/*
+	 * Admin another Construct
+	 */
 	public Admin(String login, String password, String email,int adminLevel) {
 		super(login, password,email);
 		this.setAdminLevel(adminLevel);
