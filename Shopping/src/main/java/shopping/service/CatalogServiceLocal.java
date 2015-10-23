@@ -21,7 +21,7 @@ public interface CatalogServiceLocal {
 	void removeProduct(Product product);
 	@GET 
 	@Path("/products")
-	@Produces(MediaType.APPLICATION_XML)
+	@Produces(MediaType.APPLICATION_JSON)
 	List<Product> findAllProducts();
 	
 	List<Product> findProductsByCategory(Category category);

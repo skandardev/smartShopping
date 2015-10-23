@@ -26,6 +26,7 @@ public class Product implements Serializable {
 	private String name;
 	private float unitCost;
 	private String barCode;
+	private String image;
 	
 	private Category category;
 	
@@ -83,6 +84,14 @@ public class Product implements Serializable {
 
 	public void setBarCode(String barCode) {
 		this.barCode = barCode;
+	}
+
+	public String getImage() {
+		return image;
+	}
+
+	public void setImage(String image) {
+		this.image = image;
 	}
 	
 	
